@@ -22,3 +22,19 @@ span{
     transition: transform 0.2s;
     width: 150px;
 }
+span:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
