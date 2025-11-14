@@ -26,7 +26,9 @@ span:hover{
     transform: scale(1.05);
 }
 
-
+.indicator{
+    background: linear-gradient(
+        to right,#e1a732,#da6195,#262b2a);
 
 
 
