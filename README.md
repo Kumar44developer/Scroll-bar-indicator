@@ -51,13 +51,13 @@ graph TD
 
 ```text
 Scroll-bar-indicator/
-├── .gitignore                   Standard Git exclusion patterns
-├── index.html                   Semantic markup, lexicon directory, and quicknav rail
-├── index.js                     Scroll metric calculations, rAF loop, and navigation
-├── README.md                    Startup documentation and architecture specification
-├── style.css                    Glassmorphism styling, animations, and responsive layout
+├── .gitignore                  
+├── index.html                   
+├── index.js                    
+├── README.md                    
+├── style.css                   
 └── tests/
-    └── test_scroll_indicator.js Unit test suite for scroll mathematics and boundary clamping
+    └── test_scroll_indicator.js 
 ```
 
 ---
