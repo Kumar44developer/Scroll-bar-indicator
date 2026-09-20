@@ -3,37 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrollbar Indicator</title>
-<link rel="stylesheet" href="style.css">
+    <title>Scroll Bar Indicator - Real-Time Reading Progress</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="indicator" id="scrollIndicator">
+    <header class="fixed-nav-bar">
+        <div class="indicator-track">
+            <div class="indicator" id="scrollIndicator"></div>
+        </div>
+
+        <div class="nav-content">
+            <div class="brand">
+                <span class="pulse-dot"></span>
+                <span class="brand-title">Scrollbar Indicator</span>
+            </div>
+
+            <div class="progress-display">
+                <span class="progress-label">READING PROGRESS</span>
+                <span id="percentageText" class="percentage-badge">0%</span>
+            </div>
+        </div>
+
+        <nav class="alphabet-quicknav" aria-label="Alphabet Quick Navigation">
+            <button class="nav-pill" data-letter="A">A</button>
+            <button class="nav-pill" data-letter="B">B</button>
+            <button class="nav-pill" data-letter="C">C</button>
+            <button class="nav-pill" data-letter="D">D</button>
+            <button class="nav-pill" data-letter="E">E</button>
+            <button class="nav-pill" data-letter="F">F</button>
+            <button class="nav-pill" data-letter="G">G</button>
+            <button class="nav-pill" data-letter="H">H</button>
+            <button class="nav-pill" data-letter="I">I</button>
+            <button class="nav-pill" data-letter="J">J</button>
+            <button class="nav-pill" data-letter="K">K</button>
+            <button class="nav-pill" data-letter="L">L</button>
+            <button class="nav-pill" data-letter="M">M</button>
+            <button class="nav-pill" data-letter="N">N</button>
+            <button class="nav-pill" data-letter="O">O</button>
+            <button class="nav-pill" data-letter="P">P</button>
+            <button class="nav-pill" data-letter="Q">Q</button>
+            <button class="nav-pill" data-letter="R">R</button>
+            <button class="nav-pill" data-letter="S">S</button>
+            <button class="nav-pill" data-letter="T">T</button>
+            <button class="nav-pill" data-letter="U">U</button>
+            <button class="nav-pill" data-letter="V">V</button>
+            <button class="nav-pill" data-letter="W">W</button>
+            <button class="nav-pill" data-letter="X">X</button>
+            <button class="nav-pill" data-letter="Y">Y</button>
+            <button class="nav-pill" data-letter="Z">Z</button>
+        </nav>
+    </header>
+
+    <main class="main-wrapper">
+        <section class="hero-intro">
+            <span class="hero-tag">Interactive Reading Telemetry</span>
+            <h1>Alphabetical Design Lexicon</h1>
+            <p>Scroll through the directory below to explore computational vocabulary while monitoring your exact reading progress in real time.</p>
+        </section>
+
+        <div class="text">
+            <h2 id="letter-A"><span>A</span><div class="card-desc"><h3>Algorithm</h3><p>A step-by-step problem-solving procedure or mathematical sequence of operations.</p></div></h2>
+            <h2 id="letter-B"><span>B</span><div class="card-desc"><h3>Bandwidth</h3><p>The maximum rate of data transfer across a given path in a network.</p></div></h2>
+            <h2 id="letter-C"><span>C</span><div class="card-desc"><h3>Concurrency</h3><p>The ability of different parts of a program to execute out-of-order without affecting the final outcome.</p></div></h2>
+            <h2 id="letter-D"><span>D</span><div class="card-desc"><h3>Deadlock</h3><p>A state in which two or more competing actions are each waiting for the other to finish.</p></div></h2>
+            <h2 id="letter-E"><span>E</span><div class="card-desc"><h3>Encryption</h3><p>The process of encoding information to prevent unauthorized interception.</p></div></h2>
+            <h2 id="letter-F"><span>F</span><div class="card-desc"><h3>Framework</h3><p>A universal, reusable software platform providing generic functionality.</p></div></h2>
+            <h2 id="letter-G"><span>G</span><div class="card-desc"><h3>Garbage Collection</h3><p>Automatic memory management that reclaims resources allocated to unused objects.</p></div></h2>
+            <h2 id="letter-H"><span>H</span><div class="card-desc"><h3>Hashing</h3><p>Transforming arbitrary keys into fixed-size values via deterministic hash functions.</p></div></h2>
+            <h2 id="letter-I"><span>I</span><div class="card-desc"><h3>Interface</h3><p>A shared boundary across which distinct software components exchange information.</p></div></h2>
+            <h2 id="letter-J"><span>J</span><div class="card-desc"><h3>JSON</h3><p>JavaScript Object Notation, a lightweight open-standard data interchange format.</p></div></h2>
+            <h2 id="letter-K"><span>K</span><div class="card-desc"><h3>Kernel</h3><p>The central core module of an operating system managing CPU, memory, and devices.</p></div></h2>
+            <h2 id="letter-L"><span>L</span><div class="card-desc"><h3>Latency</h3><p>The time interval between the stimulation and response in a computing network.</p></div></h2>
+            <h2 id="letter-M"><span>M</span><div class="card-desc"><h3>Mutex</h3><p>A mutual exclusion locking mechanism used to synchronize access to shared resources.</p></div></h2>
+            <h2 id="letter-N"><span>N</span><div class="card-desc"><h3>Node</h3><p>A basic unit of a data structure, graph, or network topology capable of handling messages.</p></div></h2>
+            <h2 id="letter-O"><span>O</span><div class="card-desc"><h3>Optimization</h3><p>Modifying software systems to make work execute more efficiently with fewer resources.</p></div></h2>
+            <h2 id="letter-P"><span>P</span><div class="card-desc"><h3>Paging</h3><p>A memory management scheme by which an OS retrieves data from secondary storage into pages.</p></div></h2>
+            <h2 id="letter-Q"><span>Q</span><div class="card-desc"><h3>Queue</h3><p>A first-in, first-out (FIFO) linear data structure for task scheduling and packet buffering.</p></div></h2>
+            <h2 id="letter-R"><span>R</span><div class="card-desc"><h3>Recursion</h3><p>A method where the solution to a problem depends on solutions to smaller instances of itself.</p></div></h2>
+            <h2 id="letter-S"><span>S</span><div class="card-desc"><h3>Semaphore</h3><p>A variable or abstract data type used to control access to a common resource in concurrent systems.</p></div></h2>
+            <h2 id="letter-T"><span>T</span><div class="card-desc"><h3>Throughput</h3><p>The amount of work or data processed by a system in a given period of time.</p></div></h2>
+            <h2 id="letter-U"><span>U</span><div class="card-desc"><h3>Unicode</h3><p>An information technology standard for the consistent encoding of text across languages.</p></div></h2>
+            <h2 id="letter-V"><span>V</span><div class="card-desc"><h3>Virtualization</h3><p>Creating a virtual rather than actual version of operating systems, servers, or storage devices.</p></div></h2>
+            <h2 id="letter-W"><span>W</span><div class="card-desc"><h3>WebSockets</h3><p>A computer communications protocol providing full-duplex communication channels over a single TCP connection.</p></div></h2>
+            <h2 id="letter-X"><span>X</span><div class="card-desc"><h3>XSS</h3><p>Cross-site scripting, a vulnerability enabling attackers to inject client-side scripts into web pages.</p></div></h2>
+            <h2 id="letter-Y"><span>Y</span><div class="card-desc"><h3>Yield</h3><p>An action causing the executing thread to temporarily pause and allow other threads to run.</p></div></h2>
+            <h2 id="letter-Z"><span>Z</span><div class="card-desc"><h3>Zero-Copy</h3><p>Computer operations where the CPU does not perform the task of copying data between memory contexts.</p></div></h2>
+        </div>
+    </main>
+
+    <div class="floating-controls">
+        <button id="scrollTopBtn" class="control-bubble" type="button" aria-label="Scroll to top of document">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+        </button>
+        <button id="scrollBottomBtn" class="control-bubble" type="button" aria-label="Scroll to bottom of document">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+            </svg>
+        </button>
     </div>
-  <div class="text">
-      <h2><span>A</span></h2>
-      <h2><span>B</span></h2>
-      <h2><span>C</span></h2>
-      <h2><span>D</span></h2>
-      <h2><span>E</span></h2>
-      <h2><span>F</span></h2>
-      <h2><span>G</span></h2>
-      <h2><span>H</span></h2>
-      <h2><span>I</span></h2>
-      <h2><span>J</span></h2>
-      <h2><span>K</span></h2>
-      <h2><span>L</span></h2>
-      <h2><span>M</span></h2>
-      <h2><span>N</span></h2>
-      <h2><span>O</span></h2>
-      <h2><span>P</span></h2>
-      <h2><span>Q</span></h2>
-      <h2><span>R</span></h2>
-      <h2><span>S</span></h2>
-       <h2><span>T</span></h2>
-      <h2><span>U</span></h2>
-      <h2><span>V</span></h2>
-      <h2><span>W</span></h2>
-      <h2><span>X</span></h2>
-      <h2><span>Y</span></h2>
-      <h2><span>Z</span></h2>
-    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
